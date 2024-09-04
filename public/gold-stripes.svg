@@ -1,0 +1,82 @@
+<svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Radial gradient for sparks -->
+    <radialGradient id="gold-spark" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#FFD700; stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFC107; stop-opacity:0" />
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#000000" />
+
+  <!-- Central glow -->
+  <circle cx="50%" cy="50%" r="20%" fill="url(#gold-spark)" opacity="0.2">
+    <animate attributeName="r" values="15%;25%;15%" dur="8s" repeatCount="indefinite" />
+    <animate attributeName="opacity" values="0.2;0.4;0.2" dur="8s" repeatCount="indefinite" />
+  </circle>
+
+  <!-- Moving sparks in the center -->
+  <circle cx="50%" cy="50%" r="1%">
+    <animateMotion dur="10s" repeatCount="indefinite">
+      <mpath href="#orbit1" />
+    </animateMotion>
+    <animate attributeName="fill" values="url(#gold-spark)" dur="1s" repeatCount="indefinite" />
+  </circle>
+
+  <circle cx="50%" cy="50%" r="1.5%">
+    <animateMotion dur="15s" repeatCount="indefinite">
+      <mpath href="#orbit2" />
+    </animateMotion>
+    <animate attributeName="fill" values="url(#gold-spark)" dur="1.5s" repeatCount="indefinite" />
+  </circle>
+
+  <circle cx="50%" cy="50%" r="1%">
+    <animateMotion dur="12s" repeatCount="indefinite">
+      <mpath href="#orbit3" />
+    </animateMotion>
+    <animate attributeName="fill" values="url(#gold-spark)" dur="2s" repeatCount="indefinite" />
+  </circle>
+
+  <circle cx="50%" cy="50%" r="0.8%">
+    <animateMotion dur="18s" repeatCount="indefinite">
+      <mpath href="#orbit4" />
+    </animateMotion>
+    <animate attributeName="fill" values="url(#gold-spark)" dur="1.2s" repeatCount="indefinite" />
+  </circle>
+
+  <!-- Moving sparks in the corners -->
+  <!-- Top-left corner -->
+  <circle cx="10%" cy="10%" r="2%">
+    <animate attributeName="r" values="1%;3%;1%" dur="6s" repeatCount="indefinite" />
+    <animate attributeName="opacity" values="0.3;0.6;0.3" dur="6s" repeatCount="indefinite" />
+    <animate attributeName="fill" values="url(#gold-spark)" dur="6s" repeatCount="indefinite" />
+  </circle>
+
+  <!-- Top-right corner -->
+  <circle cx="90%" cy="10%" r="2%">
+    <animate attributeName="r" values="1%;3%;1%" dur="7s" repeatCount="indefinite" />
+    <animate attributeName="opacity" values="0.3;0.6;0.3" dur="7s" repeatCount="indefinite" />
+    <animate attributeName="fill" values="url(#gold-spark)" dur="7s" repeatCount="indefinite" />
+  </circle>
+
+  <!-- Bottom-left corner -->
+  <circle cx="10%" cy="90%" r="2%">
+    <animate attributeName="r" values="1%;3%;1%" dur="8s" repeatCount="indefinite" />
+    <animate attributeName="opacity" values="0.3;0.6;0.3" dur="8s" repeatCount="indefinite" />
+    <animate attributeName="fill" values="url(#gold-spark)" dur="8s" repeatCount="indefinite" />
+  </circle>
+
+  <!-- Bottom-right corner -->
+  <circle cx="90%" cy="90%" r="2%">
+    <animate attributeName="r" values="1%;3%;1%" dur="9s" repeatCount="indefinite" />
+    <animate attributeName="opacity" values="0.3;0.6;0.3" dur="9s" repeatCount="indefinite" />
+    <animate attributeName="fill" values="url(#gold-spark)" dur="9s" repeatCount="indefinite" />
+  </circle>
+
+  <!-- Orbit paths -->
+  <path id="orbit1" d="M 50 50 m -25 0 a 25 25 0 1 1 50 0 a 25 25 0 1 1 -50 0" fill="none" stroke="none" />
+  <path id="orbit2" d="M 50 50 m -35 0 a 35 35 0 1 1 70 0 a 35 35 0 1 1 -70 0" fill="none" stroke="none" />
+  <path id="orbit3" d="M 50 50 m -45 0 a 45 45 0 1 1 90 0 a 45 45 0 1 1 -90 0" fill="none" stroke="none" />
+  <path id="orbit4" d="M 50 50 m -55 0 a 55 55 0 1 1 110 0 a 55 55 0 1 1 -110 0" fill="none" stroke="none" />
+</svg>

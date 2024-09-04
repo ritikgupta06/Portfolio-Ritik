@@ -1,0 +1,66 @@
+/* About.css */
+.about {
+  padding: 3rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+
+
+.about-photo-container {
+  margin-bottom: 2rem;
+}
+
+.about-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #555;
+}
+
+.about-text-container {
+  max-width: 800px;
+  margin: 0 auto; /* Center the text container */
+}
+
+.about-title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #f9c818; /* Optional: Adds a highlight color to the title */
+}
+
+.about-description {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.skills-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #ffe312; /* Optional: Adds a highlight color to the skills title */
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+.skill-icon {
+  font-size: 3rem;
+  color: #fdda16; /* Optional: Sets the icon color to match the theme */
+  margin-bottom: 0.5rem;
+}

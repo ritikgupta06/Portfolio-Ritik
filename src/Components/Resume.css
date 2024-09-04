@@ -1,0 +1,41 @@
+/* Resume.css */
+.resume-container {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    padding: 20px;
+    background-image: url('/gold-stripes.svg'); /* Background image */
+    background-size: 165% auto; /* Increase the size of the background image */
+    background-position: right; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent repetition of the image */
+ 
+}
+
+.resume-iframe {
+    width: 210mm; /* A4 width */
+    height: 200mm; /* A4 height */
+    border: 1px solid #ccc; /* Optional border */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional shadow for a paper-like effect */
+    background-color: white; /* Ensure white background for better visibility */
+}
+
+.download-container {
+    margin-top: 20px; /* Space between iframe and button */
+}
+
+.download-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: rgb(245, 192, 35);
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.download-button:hover {
+    background-color: #c4b702;
+}

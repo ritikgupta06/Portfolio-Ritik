@@ -1,0 +1,112 @@
+/* Home.css */
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    height: calc(100vh - 60px); /* Adjust based on Navbar and Footer height */
+    /* No background color set here for full transparency */
+    border-radius: 10px; /* Optional: rounded corners */
+  }
+  
+  .photo-container {
+    width: 80%; /* Default width for mobile */
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .photo {
+    width: 200px; /* Default size for mobile */
+    height: 200px; /* Same as width to maintain a perfect circle */
+    border-radius: 50%;
+    object-fit: cover; /* Ensures the image covers the circle without distortion */
+  }
+  
+  .text-container {
+    width: 80%; /* Default width for mobile */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .name {
+    font-family: Arial, sans-serif;
+    font-size: 24px; /* Default size for mobile */
+    color: #f3d80c;
+    margin: 0;
+  }
+  
+  .description {
+    font-family: Arial, sans-serif;
+    font-size: 16px; /* Default size for mobile */
+    color: #7d7a7a;
+    margin-top: 10px;
+  }
+  
+  /* Media Queries for larger screens */
+  
+  @media (min-width: 768px) {
+    .content {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    .photo-container {
+      width: 40%;
+      margin-bottom: 0;
+    }
+  
+    .photo {
+      width: 300px; /* Adjusted size for tablets */
+      height: 300px; /* Same as width to maintain a perfect circle */
+    }
+  
+    .text-container {
+      width: 50%;
+      text-align: left; /* Align text to the left on larger screens */
+      padding-left: 20px; /* Space between photo and text */
+    }
+  
+    .name {
+      font-size: 36px; /* Adjusted size for tablets */
+    }
+  
+    .description {
+      font-size: 20px; /* Adjusted size for tablets */
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .photo {
+      width: 450px; /* Adjusted size for desktops */
+      height: 450px; /* Same as width to maintain a perfect circle */
+    }
+  
+    .text-container {
+      width: 50%;
+    }
+  
+    .name {
+      font-size: 36px; /* Adjusted size for desktops */
+    }
+  
+    .description {
+      font-size: 24px; /* Adjusted size for desktops */
+    }
+  }
+  .typing-effect::after {
+    content: '|';
+    animation: blink 1s infinite;
+    color: #f3d80c; /* Same color as your text */
+    margin-left: 5px;
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}

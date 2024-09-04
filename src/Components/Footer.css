@@ -1,0 +1,134 @@
+.footer {
+    font-family: "Montserrat", sans-serif;
+      margin: 10px;
+      border-radius: 10px;
+      background-color: #000000;
+      color: #fff;
+      padding: 20px 0;
+      bottom: 0;
+    }
+    
+    .footer-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    
+    .footer-section {
+      flex: 1;
+      min-width: 200px;
+      margin: 10px;
+    }
+    
+    .footer-section h4 {
+      margin-bottom: 10px;
+      font-size: 1.6rem;
+      font-weight: 550;
+    }
+    
+    .footer-section p {
+      color: rgb(255, 255, 255);
+      font-weight: 525;
+      font-size: 1.1rem;
+      margin-bottom: 10px;
+      line-height: 1.5;
+    }
+    
+    .footer-section ul {
+      list-style: none;
+      padding: 0;
+    }
+    
+    .footer-section ul li {
+      margin-bottom: 10px;
+    }
+    
+    .footer-section ul li a {
+      font-size: 1.1rem;
+      font-weight: 525;
+      color: rgb(255, 251, 251);
+      text-decoration: none;
+    }
+    
+    .footer-section ul li a:hover {
+      text-decoration: underline;
+    }
+    
+    .social-media {
+      display: flex;
+      gap: 10px;
+    }
+    
+    .social-media li {
+      list-style: none;
+    }
+    
+    .social-media a {
+      color: #fff;
+      font-size: 20px;
+      text-decoration: none;
+    }
+    
+    .newsletter-form {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .newsletter-form input[type="email"] {
+      padding: 10px;
+      margin-bottom: 10px;
+      border: none;
+      border-radius: 5px;
+    }
+    
+    .newsletter-form button {
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      background-color: rgb(245, 192, 35);
+      color: #fff;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    
+    .newsletter-form button:hover {
+      background-color: #b69400;
+    }
+    
+    .footer-bottom {
+      text-align: center;
+      padding: 10px 0;
+      border-top: 1px solid #ffffff;
+      margin-top: 10px;
+    }
+    
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+      .footer-container {
+        flex-direction: column;
+        align-items: center;
+      }
+    
+      .footer-section {
+        margin: 10px 0;
+        text-align: center;
+      }
+    
+      .newsletter-form {
+        align-items: center;
+      }
+    
+      .newsletter-form input[type="email"] {
+        width: 100%;
+        max-width: 300px;
+      }
+    
+      .newsletter-form button {
+        width: 100%;
+        max-width: 300px;
+      }
+    }
+    
