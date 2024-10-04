@@ -5,12 +5,12 @@ export const Resume = () => {
   return (
     <div className="resume-container">
       <iframe
-        src="/Resume Ritik.pdf"
+        src="/ritik gupta resume.pdf"
         title="Resume"
         className="resume-iframe"
       />
       <div className="download-container">
-          <a href="/Resume Ritik.pdf" download="Resume Ritik.pdf" className="download-button">
+          <a href="/ritik gupta resume.pdf" download="Resume Ritik.pdf" className="download-button">
             Download Resume
           </a>
           </div>
