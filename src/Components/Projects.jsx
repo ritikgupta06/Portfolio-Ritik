@@ -10,7 +10,7 @@ const projects = [
     roles: "Full-Stack Developer, UI/UX Designer",
     impact:
       "Streamlined document management and collaboration for users with advanced sharing and editing features.",
-    imageUrl: "/redocx.png", // Ensure this path matches the actual image location
+    imageUrl: "/redocx.png",
     link: "https://redocx.onlyritik.me/",
   },
 
@@ -24,7 +24,7 @@ const projects = [
     impact:
       "Enhanced user engagement with event schedules, registration, and multimedia galleries.",
     imageUrl: "/ignita.png",
-    link: "https://ignitia2k24-test.vercel.app/", // Replace with the actual project link
+    link: "https://ignitia2k24-test.vercel.app/",
   },
   {
     title: "Engineering Grace",
@@ -35,7 +35,7 @@ const projects = [
     impact:
       "Enabled students to make informed decisions on career pathways through tailored guidance.",
     imageUrl: "/eg.png",
-    link: "https://ritik6g.netlify.app/", // Replace with the actual project link
+    link: "https://ritik6g.netlify.app/",
   },
   {
     title: "BusTrek",
@@ -46,7 +46,7 @@ const projects = [
     roles: "UI/UX Designer, Front-End Developer, Cloud Integration",
     impact: "Improved transportation logistics efficiency by 30%",
     imageUrl: "/bus.png",
-    link: "https://bus-tracking-system-frontend.itshivam.me/", // Replace with the actual project link
+    link: "https://bus-scout.studex.tech/",
   },
   {
     title: "ExamPrep Question Hub",
@@ -57,7 +57,7 @@ const projects = [
     impact:
       "Centralized study material repository with responsive UI and advanced search and filter functionalities.",
     imageUrl: "/ep.png",
-    link: "examprep.com", // Replace with the actual project link
+    link: "examprep.com",
   },
 ];
 
