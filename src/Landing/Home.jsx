@@ -5,6 +5,7 @@ import Footer from '../Components/Footer.jsx';
 import Projects from '../Components/Projects.jsx';
 import './Home.css'; // Ensure you create this CSS file
 import About from '../Components/About.jsx';
+import Achievements from '../Components/Achievements.jsx';
 import { TypeAnimation } from 'react-type-animation';
 
 function Home() {
@@ -40,7 +41,10 @@ function Home() {
         <About />
       </section>
       <section id="projects-section">
-      <Projects/>
+        <Projects/>
+      </section>
+      <section id="achievements-section">
+        <Achievements />
       </section>
 
       <Footer />

@@ -2,10 +2,10 @@
     font-family: "Montserrat", sans-serif;
       margin: 10px;
       border-radius: 10px;
-      background-color: #000000;
+      background-color: #07070776;
       color: #fff;
-      padding: 20px 0;
-      bottom: 0;
+      padding: 40px 0 20px;
+      position: relative;
     }
     
     .footer-container {
@@ -15,26 +15,30 @@
       max-width: 1200px;
       margin: 0 auto;
       padding: 0 20px;
+      gap: 30px;
     }
     
     .footer-section {
       flex: 1;
-      min-width: 200px;
-      margin: 10px;
+      min-width: 250px;
+      margin-bottom: 20px;
     }
     
     .footer-section h4 {
-      margin-bottom: 10px;
-      font-size: 1.6rem;
-      font-weight: 550;
+      color: #f9c818;
+      font-size: 1.4rem;
+      margin-bottom: 20px;
+      font-weight: 600;
     }
     
     .footer-section p {
-      color: rgb(255, 255, 255);
-      font-weight: 525;
-      font-size: 1.1rem;
-      margin-bottom: 10px;
-      line-height: 1.5;
+      color: #ffffff;
+      font-size: 1rem;
+      margin-bottom: 15px;
+      line-height: 1.6;
+      display: flex;
+      align-items: center;
+      gap: 10px;
     }
     
     .footer-section ul {
@@ -43,92 +47,97 @@
     }
     
     .footer-section ul li {
-      margin-bottom: 10px;
+      margin-bottom: 12px;
     }
     
     .footer-section ul li a {
-      font-size: 1.1rem;
-      font-weight: 525;
-      color: rgb(255, 251, 251);
+      color: #ffffff;
       text-decoration: none;
+      font-size: 1rem;
+      transition: color 0.3s ease;
+      display: flex;
+      align-items: center;
+      gap: 10px;
     }
     
     .footer-section ul li a:hover {
-      text-decoration: underline;
+      color: #f9c818;
     }
     
     .social-media {
       display: flex;
-      gap: 10px;
+      gap: 20px;
     }
     
     .social-media li {
-      list-style: none;
+      margin: 0;
     }
     
     .social-media a {
-      color: #fff;
-      font-size: 20px;
+      color: #ffffff;
+      font-size: 1.5rem;
+      transition: all 0.3s ease;
+    }
+    
+    .social-media a:hover {
+      color: #f9c818;
+      transform: translateY(-3px);
+    }
+    
+    .get-in-touch-button {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 24px;
+      background-color: #f9c818;
+      color: #000;
       text-decoration: none;
-    }
-    
-    .newsletter-form {
-      display: flex;
-      flex-direction: column;
-    }
-    
-    .newsletter-form input[type="email"] {
-      padding: 10px;
-      margin-bottom: 10px;
-      border: none;
       border-radius: 5px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      margin-top: 10px;
     }
     
-    .newsletter-form button {
-      padding: 10px;
-      border: none;
-      border-radius: 5px;
-      background-color: rgb(245, 192, 35);
-      color: #fff;
-      font-size: 1rem;
-      cursor: pointer;
-    }
-    
-    .newsletter-form button:hover {
-      background-color: #b69400;
+    .get-in-touch-button:hover {
+      background-color: #e6b800;
+      transform: translateY(-2px);
+      color: #000;
     }
     
     .footer-bottom {
       text-align: center;
-      padding: 10px 0;
-      border-top: 1px solid #ffffff;
-      margin-top: 10px;
+      padding: 20px 0 0;
+      margin-top: 40px;
+      border-top: 1px solid #333;
+    }
+    
+    .footer-bottom p {
+      color: #888;
+      font-size: 0.9rem;
     }
     
     /* Responsive Styles */
     @media (max-width: 768px) {
       .footer-container {
         flex-direction: column;
-        align-items: center;
+        gap: 20px;
       }
     
       .footer-section {
-        margin: 10px 0;
+        min-width: 100%;
         text-align: center;
       }
     
-      .newsletter-form {
-        align-items: center;
+      .footer-section p {
+        justify-content: center;
       }
     
-      .newsletter-form input[type="email"] {
-        width: 100%;
-        max-width: 300px;
+      .social-media {
+        justify-content: center;
       }
     
-      .newsletter-form button {
-        width: 100%;
-        max-width: 300px;
+      .get-in-touch-button {
+        margin: 10px auto;
       }
     }
     

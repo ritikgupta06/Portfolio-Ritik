@@ -3,6 +3,28 @@ import "./Projects.css"; // Ensure you create this CSS file
 
 const projects = [
   {
+    title: "Ignitia 2K25",
+    description:
+      "Developed the official website and app for the college's Techno-Cultural Fest using Next.js, Node.js, GoLang, and PostgreSQL. Integrated online payment gateways for secure event registration and ticketing. Built a dynamic frontend with Next.js and Tailwind CSS for engaging UI/UX. Deployed on Vercel with serverless functions for fast, reliable performance.",
+    technologies: "Next.js, Node.js, GoLang, PostgreSQL, Tailwind CSS, Vercel",
+    roles: "Full-Stack Developer, UI/UX Designer, Payment Integration",
+    impact:
+      "Streamlined event registration and ticketing process with secure payment integration, enhanced user engagement through modern UI/UX design.",
+    imageUrl: "/ignitia2k25.png",
+    link: "https://ignitia.in/",
+  },
+  {
+    title: "E-Shielded Assessment",
+    description:
+      "Developed an AI-based recruitment portal using Next.js, Node.js, GoLang, Mistral AI, and PostgreSQL for end-to-end hiring. Integrated Mistral AI for smart candidate evaluation and decision-making. Built a dynamic frontend with Next.js and a robust backend with RESTful API for seamless operations.",
+    technologies: "Next.js, Node.js, GoLang, Mistral AI, PostgreSQL, RESTful API",
+    roles: "Full-Stack Developer, AI Integration Specialist, System Architect",
+    impact:
+      "Revolutionized the recruitment process with AI-powered candidate evaluation, streamlined hiring workflow, and data-driven decision making.",
+    imageUrl: "/eshield.png",
+    link: "https://eshield.vercel.app/",
+  },
+  {
     title: "Redocx",
     description:
       "Designed and developed an intuitive platform for document collaboration and sharing.",
@@ -13,12 +35,10 @@ const projects = [
     imageUrl: "/redocx.png",
     link: "https://redocx.onlyritik.me/",
   },
-
   {
     title: "Ignita 2k24",
-
     description:
-      "Developed the official website for Ignitia 2k24, our college’s cultural fest.",
+      "Developed the official website for Ignitia 2k24, our college's cultural fest.",
     technologies: "Next.js, TypeScript, Django, RESTful API, AWS, MySQL",
     roles: "UI/UX Designer, Front-End Developer, Front-End Lead",
     impact:
@@ -39,7 +59,6 @@ const projects = [
   },
   {
     title: "BusTrek",
-
     description:
       "Developed an innovative bus management system for college campuses.",
     technologies: "Vite.js, Django, RESTful API, AWS, MongoDB",

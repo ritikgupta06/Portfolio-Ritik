@@ -47,6 +47,16 @@ const Navbar = () => {
             >
               Projects
             </a>
+            <a
+              href="#achievements-section"
+              className="navbar-link"
+              onClick={(e) => {
+                e.preventDefault();
+                handleScrollToSection('achievements-section');
+              }}
+            >
+              Achievements
+            </a>
             <Link to="/connect" className="navbar-link">Connect</Link>
             <Link to="/download-resume" className="navbar-link">Resume</Link>
           </div>
